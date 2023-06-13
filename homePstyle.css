@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* M.T SURIYAARACHCHIGE IT21146992 */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	width: auto;
+	margin: auto;
+}
+
+body{
+	background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+	url("homePic1.jpg"); /* Set background darkness */
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+.nav-area{ /* to move navigation bar to right side */
+	position: relative; /*tag effects to myslide img */
+	float: right;
+	list-style: none;
+	margin-top: 20px;
+	padding-right: 10px;
+}
+
+.nav-area li{ /* to inline navigation bar */
+	display: inline-block;
+}
+.nav-area li a { /* to change color navigation bar */
+	color:  #341415;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-size: 14px;
+	border-radius: 20px;
+}
+.nav-area li a:hover, /* to highlight around the navigation tabs */
+.nav-area li a.active{ /* to show active navigation tabs */
+	background: #fff;
+	color: #333;
+}
+
+.welcome-text h1{
+	position: absolute;
+	margin: 15% 60%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 70px;
+	transition: 0.2s;
+}
+.welcome-text h1:hover{
+	-webkit-text-stroke: 2px #191919;
+	color: transparent;
+}
+.welcome-text a {
+	position: absolute;
+	text-decoration: none;
+	display: inline-block;
+	color: #FCFBFB;
+	font-size: 24px;
+	border: 2px solid #fff;
+	padding: 14px 70px;
+	border-radius: 50px;
+	margin: 28% 63%;
+}
+
+
+/* ll */
+
+
+.mySlides {display: none;}
+img {
+	/* margin-left: 90%; */
+	width: 1100px;
+	vertical-align:middle;
+	padding: 50px 50px 85px 400px;;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	position: absolute;
+    max-width: 1000px;
+    margin: auto ;
+	
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}

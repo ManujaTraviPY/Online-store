@@ -1,0 +1,60 @@
+<!doctype html>
+<!-- M.T SURIYAARACHCHIGE IT21146992 -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Old Navy</title>
+	<link rel="stylesheet" type="text/css" href="homePstyle.css">	
+</head>
+
+<body onLoad="showSlides()">
+	
+	<script>
+  let slideIndex = 0;
+  showSlides();
+  function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+	  slides[i].style.display = "none";
+  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}
+	  slides[slideIndex-1].style.display = "block";
+	  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }	
+</script>
+	<div class="slideshow-container">
+	 <div class="mySlides fade">
+		 <img src="1.jpg" width:"100%">
+
+		</div>
+		<div class="mySlides fade">
+		 <img src="2.jpg" width:"100%">
+
+		</div>
+		<div class="mySlides fade">
+		 <img src="3.jpg" width:"100%">
+
+		</div>
+	</div>
+	<!-- ll -->
+	
+	<div class="wrapper"> <!-- large image with text -->
+		<ul class="nav-area">	
+			<li><a href="homepage.html" class="active" >Home</a></li>
+			<li><a href="store.php">Store</a></li>
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="aboutus.php">About</a></li>
+			<li><a href="login.php">Sign Up</a></li>
+			<li><a href="#" aria-pressed="My Cart" title="My Cart">Cart</a></li>
+		</ul>
+	</div>
+	
+	<div class="welcome-text">
+		<h1>Art of Fashion</h1>
+		<a href="store.php">Explore</a> <!-- explore tag leads to About page on the site-->
+	</div>
+		
+</body>
+</html>

@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@300;400;500&display=swap");
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background-color: var(--white);
+}
+html::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+
+section {
+  padding: 5rem 10%;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+/*----- heading for about home ----*/
+.heading {
+  background-size: cover !important;
+  background-position: center !important;
+  padding-top: 10rem;
+  padding-bottom: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading h1 {
+  font-size: 10rem;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: var(--text-shadow);
+}
+
+/*--button set styles in home slider --*/
+
+.btn {
+  display: inline-block;
+  background: var(--main-color);
+  margin-top: 1rem;
+  color: black;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--light-white);
+}
+
+/*----heading styles----*/
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--white);
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-shadow: var(--box-shadow);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  color: black;
+}
+
+.header .navbar a {
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: black;
+}
+
+.header .navbar a:hover {
+  color: var(--main-color);
+}
+
+#menu-btn {
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--main-color);
+  display: none;
+}
+
+.heading-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 4rem;
+}
+
+#mp {
+  margin-top: 5rem;
+}
+
+
+/*----about main page styles-----*/
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.about .image {
+  flex: 1 1 41rem;
+}
+
+.about .image img {
+  width: 100%;
+}
+.about .content {
+  flex: 1 1 41rem;
+  text-align: center;
+}
+
+.about .content h3 {
+  font-size: 3rem;
+  color: black;
+}
+
+.about .content p {
+  font-size: 1.5rem;
+  color: var(--light-black);
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+.about .content .icons-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-end;
+}
+
+.about .content .icons-container .icons {
+  background: var(--light-bg);
+  padding: 2rem;
+  flex: 1 1 16rem;
+}
+
+.about .content .icons-container .icons i {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: var(--main-color);
+}
+
+.about .content .icons-container .icons span {
+  font-size: 1.5rem;
+  color: var(--light-black);
+  display: block;
+}
+
+
+
+/*----footer styles ----*/
+
+.footer {
+  background: url("asserts/footer5.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem;
+}
+
+.footer .box-container .box h3 {
+  color: var(--white);
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.footer .box-container .box a {
+  color: var(--light-white);
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: block;
+}
+
+.footer .box-container .box a i {
+  color: var(--main-color);
+  padding-right: 0.5rem;
+  transition: 0.2s linear;
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.footer .credit {
+  text-align: center;
+  color: var(--white);
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 0.1rem solid var(--light-white);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.footer .credit span {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.footer2 .credit2 {
+  text-align: center;
+  color: var(--black);
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 0.1rem solid var(--black);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.footer2 .credit2 span {
+  color: var(--main-color);
+  font-weight: bold;
+}
